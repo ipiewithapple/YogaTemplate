@@ -1,0 +1,44 @@
+// Variables
+
+$main-text: #8E80A9;
+
+// Mixins
+// Fonts
+@font-face {
+  font-family: "Geometria";
+
+  src: url("../fonts/Geometria.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Caveat";
+  src: url("../fonts/Caveatregular.woff") format("woff"),
+  url("../fonts/Caveatregular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+// Imports
+
+@import './blocks/header.scss';
+
+// Global
+
+* {
+  margin: 0;
+  padding: 0;
+
+  &::selection{
+    color: #FFFFFF;
+    background-color: $main-text;
+  }
+}
+
+body {
+  font-family: "Geometria";
+  font-size: 16px;
+  color: $main-text;
+  background-color: #FCF8FE;
+}
