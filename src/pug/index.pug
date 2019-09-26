@@ -17,9 +17,10 @@ html(lang="en")
       .header-top
         nav.nav-main
           ul.nav-list
+            li.nav-list-item.nav-close
             each el in navItems
               li.nav-list-item: a.nav-list-link= el
-          button.nav-toggle
+          button.nav-open
             span.nav-btn
             span.nav-menu Меню
         a.nav-tel 8 (888) 111-11-11
@@ -33,4 +34,11 @@ html(lang="en")
           li.social-item: a: i.fab.fa-twitter
           li.social-item: a: i.fab.fa-facebook-f
         span.city Санкт-Петербург
+    main.main
+      section.directions
+        h2.directions-title Направления
 
+
+    //- scripts
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+    script(src="js/min.script.js")

@@ -1,1 +1,1 @@
-"use strict";
+"use strict";var $open=$(".nav-open"),$close=$(".nav-close"),$menu=$(".nav-list");$open.on("click",function(){$menu.addClass("nav-in")}),$close.on("click",function(){$menu.removeClass("nav-in")});
