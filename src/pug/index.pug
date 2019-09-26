@@ -6,15 +6,14 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    //- fonts
-    link(href="https://fonts.googleapis.com/css?family=Caveat&display=swap&subset=cyrillic" rel="stylesheet")
     //- css
     link(rel="stylesheet", href="css/min.style.css")
     //- icons
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css")
     title Yoga
   body
     header.header
-      div.header-top
+      .header-top
         nav.nav-main
           ul.nav-list
             each el in navItems
@@ -23,8 +22,14 @@ html(lang="en")
             span.nav-btn
             span.nav-menu Меню
         a.nav-tel 8 (888) 111-11-11
-      div.header-mid
+      .header-mid
         span.header-slogan Почувствуй расслабление в своем теле
         h1.header-logo Yoga
         button.header-signup Запишитесь на бесплатное<br />пробное занятие
+      .header-bottom
+        ul.social-list
+          li.social-item: i.fab.fa-vk
+          li.social-item: i.fab.fa-twitter
+          li.social-item: i.fab.fa-facebook-f
+        span.city Санкт-Петербург
 
