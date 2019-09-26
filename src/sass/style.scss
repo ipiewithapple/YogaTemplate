@@ -4,7 +4,6 @@ $main-text: #8E80A9;
 $secondary-text: #E65C7B;
 $anim: all .2s ease-in-out;
 
-// Mixins
 // Fonts
 @font-face {
   font-family: "Geometria";
@@ -17,13 +16,14 @@ $anim: all .2s ease-in-out;
 @font-face {
   font-family: "Caveat";
   src: url("../fonts/Caveatregular.woff") format("woff"),
-  url("../fonts/Caveatregular.woff2") format("woff2");
+    url("../fonts/Caveatregular.woff2") format("woff2");
   font-style: normal;
   font-weight: normal;
 }
 
 // Imports
 
+@import './mixins.scss';
 @import './blocks/header.scss';
 @import './blocks/main.scss';
 @import './blocks/directions.scss';
@@ -34,7 +34,7 @@ $anim: all .2s ease-in-out;
   margin: 0;
   padding: 0;
 
-  &::selection{
+  &::selection {
     color: #FFFFFF;
     background-color: $main-text;
   }
@@ -47,6 +47,12 @@ body {
   background-color: #FCF8FE;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .section-number {
   position: absolute;
   right: 0;
@@ -57,7 +63,7 @@ body {
   font-weight: 700;
   opacity: .5;
 
-  &::after{
+  &::after {
     content: "";
     display: block;
     width: 50px;

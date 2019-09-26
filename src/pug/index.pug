@@ -27,7 +27,7 @@ html(lang="en")
       .header-mid
         span.header-slogan Почувствуй расслабление в своем теле
         h1.header-logo Yoga
-        button.header-signup Запишитесь на бесплатное<br />пробное занятие
+        button.header-signup Запишитесь на бесплатное<br>пробное занятие
       .header-bottom
         ul.social-list
           li.social-item: a: i.fab.fa-vk
@@ -36,7 +36,32 @@ html(lang="en")
         span.city Санкт-Петербург
     main.main
       section.directions
+        .section-number 02
         h2.directions-title Направления
+        .cards-block
+          .card
+            img.card-img(src="img/card-1.jpg", alt="Хатха-йога")
+            .card-desc
+              h3.card-title Хатха-йога
+              p.card-timetable Пн, Ср, Пт – с 12:00 до 15:00<br>Вт, Чт – с 18:00 до 21:00
+              p.card-trainer Инструктор<br>Губка Боб
+              button.card-btn
+          .cards-desktop
+            .card
+              img.card-img(src="img/card-2.jpg", alt="Хатха-йога")
+              .card-desc
+                h3.card-title Ашатанга-йога
+                p.card-timetable Пн, Ср, Пт – с 11:00 до 14:00<br>Вт, Чт – с 19:00 до 21:00
+                p.card-trainer Инструктор<br>Патрик Стар
+                button.card-btn
+            .card
+              img.card-img(src="img/card-3.jpg", alt="Хатха-йога")
+              .card-desc
+                h3.card-title Кундалини-йога
+                p.card-timetable Пн, Ср, Пт – с 12:00 до 15:00<br>Вт, Чт – с 18:00 до 21:00
+                p.card-trainer Инструктор<br>Сквидвард Тентикалс
+                button.card-btn
+            button.cards-btn-more Смотреть больше
 
 
     //- scripts

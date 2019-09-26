@@ -1,0 +1,62 @@
+// Mixins
+
+@mixin card-main {
+
+  & .card-desc {
+    position: relative;
+    padding: 45px;
+    background-color: #FFFFFF;
+
+    & .card-title {
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+
+    & .card-timetable {
+      margin-bottom: 15px;
+      font-size: 12px;
+    }
+
+    & .card-trainer {
+      font-size: 12px;
+      color: $secondary-text;
+    }
+
+    & .card-btn {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 65px;
+      height: 100%;
+      background: url("../img/arr-r.svg") no-repeat center center;
+      background-color: $main-text;
+      border: none;
+      cursor: pointer;
+      transition: $anim;
+
+      &:hover {
+        background-color: $secondary-text;
+      }
+    }
+  }
+}
+
+@mixin card-desktop {
+  display: flex;
+
+  & .card-img {
+    width: 220px;
+    height: auto;
+  }
+
+  & .card-desc {
+    flex-grow: 1;
+
+    & .card-btn {
+      width: 45px;
+      height: 30px;
+      right: 35px;
+      bottom: 35px;
+    }
+  }
+}

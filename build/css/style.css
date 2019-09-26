@@ -12,6 +12,7 @@
 
 .header {
   position: relative;
+  height: 100vh;
   background: url("../img/header-bg.png") no-repeat center center;
   background-size: cover; }
 
@@ -225,8 +226,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 10%;
-  padding-bottom: 130px; }
+  padding: 0 10%; }
 
 .social-list {
   display: -webkit-box;
@@ -235,7 +235,8 @@
   list-style: none; }
 
 .social-item {
-  margin-right: 10px; }
+  margin-right: 10px;
+  cursor: pointer; }
   .social-item i {
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; }
@@ -243,6 +244,7 @@
     color: #E65C7B; }
 
 .directions {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -252,10 +254,86 @@
           flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  background: url("../img/directions-bg.png") no-repeat center -40px; }
 
 .directions-title {
-  font-size: 30px; }
+  font-size: 30px;
+  margin-bottom: 65px; }
+
+.cards-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 65%; }
+
+.card {
+  margin-right: 30px;
+  margin-bottom: 30px; }
+  .card .card-desc {
+    position: relative;
+    padding: 45px;
+    background-color: #FFFFFF; }
+    .card .card-desc .card-title {
+      margin-bottom: 15px;
+      font-size: 16px; }
+    .card .card-desc .card-timetable {
+      margin-bottom: 15px;
+      font-size: 12px; }
+    .card .card-desc .card-trainer {
+      font-size: 12px;
+      color: #E65C7B; }
+    .card .card-desc .card-btn {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 65px;
+      height: 100%;
+      background: url("../img/arr-r.svg") no-repeat center center;
+      background-color: #8E80A9;
+      border: none;
+      cursor: pointer;
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
+      .card .card-desc .card-btn:hover {
+        background-color: #E65C7B; }
+
+.cards-desktop {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+  .cards-desktop .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .cards-desktop .card .card-img {
+      width: 220px;
+      height: auto; }
+    .cards-desktop .card .card-desc {
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1; }
+      .cards-desktop .card .card-desc .card-btn {
+        width: 45px;
+        height: 30px;
+        right: 35px;
+        bottom: 35px; }
+
+.cards-btn-more {
+  margin-right: 30px;
+  width: calc(100% - 30px);
+  height: 50px;
+  color: #8E80A9;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
+          box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  .cards-btn-more:hover {
+    color: #FFFFFF;
+    background-color: #8E80A9; }
 
 * {
   margin: 0;
@@ -272,6 +350,11 @@ body {
   font-size: 16px;
   color: #8E80A9;
   background-color: #FCF8FE; }
+
+img {
+  display: block;
+  width: 100%;
+  height: auto; }
 
 .section-number {
   position: absolute;
