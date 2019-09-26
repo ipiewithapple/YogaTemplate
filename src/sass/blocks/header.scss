@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   background: url('../img/header-bg.png') no-repeat center center;
   background-size: cover;
 }
@@ -31,6 +32,19 @@
   background: none;
   border: none;
   cursor: pointer;
+
+
+  &:hover {
+    .nav-menu {
+      color: $secondary-text;
+    }
+
+    .nav-btn,
+    ::after,
+    ::before {
+      background-color: $secondary-text;
+    }
+  }
 }
 
 .nav-btn {
@@ -39,6 +53,7 @@
   height: 2px;
   margin-right: 10px;
   background: $main-text;
+  transition: $anim;
 
   &::after {
     content: "";
@@ -64,10 +79,16 @@
 .nav-menu {
   color: $main-text;
   font-size: 16px;
+  transition: $anim;
 }
 
 .nav-tel {
   cursor: pointer;
+  transition: $anim;
+
+  &:hover {
+    color: $secondary-text;
+  }
 }
 
 // Header middle
@@ -105,6 +126,7 @@
   background: none;
   border: none;
   cursor: pointer;
+  transition: $anim;
 
   &::before {
     content: "";
@@ -114,6 +136,15 @@
     margin-right: 10px;
     background: url("../img/arr-r.svg") no-repeat center center;
     background-color: $secondary-text;
+    transition: $anim;
+  }
+
+  &:hover {
+    color: $main-text;
+  }
+
+  &:hover::before {
+    background-color: $main-text;
   }
 }
 
@@ -136,4 +167,12 @@
 
 .social-item {
   margin-right: 10px;
+
+  & i {
+    transition: $anim;
+  }
+
+  & i:hover {
+    color: $secondary-text;
+  }
 }

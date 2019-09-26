@@ -11,6 +11,7 @@
   font-weight: normal; }
 
 .header {
+  position: relative;
   background: url("../img/header-bg.png") no-repeat center center;
   background-size: cover; }
 
@@ -50,13 +51,21 @@
   background: none;
   border: none;
   cursor: pointer; }
+  .nav-toggle:hover .nav-menu {
+    color: #E65C7B; }
+  .nav-toggle:hover .nav-btn,
+  .nav-toggle:hover ::after,
+  .nav-toggle:hover ::before {
+    background-color: #E65C7B; }
 
 .nav-btn {
   position: relative;
   width: 24px;
   height: 2px;
   margin-right: 10px;
-  background: #8E80A9; }
+  background: #8E80A9;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
   .nav-btn::after {
     content: "";
     position: absolute;
@@ -76,10 +85,16 @@
 
 .nav-menu {
   color: #8E80A9;
-  font-size: 16px; }
+  font-size: 16px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
 
 .nav-tel {
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  .nav-tel:hover {
+    color: #E65C7B; }
 
 .header-mid {
   display: -webkit-box;
@@ -119,7 +134,9 @@
   line-height: 22px;
   background: none;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
   .header-signup::before {
     content: "";
     display: block;
@@ -127,7 +144,13 @@
     height: 48px;
     margin-right: 10px;
     background: url("../img/arr-r.svg") no-repeat center center;
-    background-color: #E65C7B; }
+    background-color: #E65C7B;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+  .header-signup:hover {
+    color: #8E80A9; }
+  .header-signup:hover::before {
+    background-color: #8E80A9; }
 
 .header-bottom {
   display: -webkit-box;
@@ -150,6 +173,11 @@
 
 .social-item {
   margin-right: 10px; }
+  .social-item i {
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+  .social-item i:hover {
+    color: #E65C7B; }
 
 * {
   margin: 0;
@@ -166,3 +194,25 @@ body {
   font-size: 16px;
   color: #8E80A9;
   background-color: #FCF8FE; }
+
+.section-number {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30px;
+  font-weight: 700;
+  opacity: .5; }
+  .section-number::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    margin-left: 10px;
+    background-color: #8E80A9;
+    opacity: .5; }

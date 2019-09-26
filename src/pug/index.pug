@@ -1,4 +1,4 @@
-- var navItems = ["Главная", "Направления", "Абонементы", "Наша команда", "Отзывы", "Контакты"]
+- const navItems = ["Главная", "Направления", "Абонементы", "Наша команда", "Отзывы", "Контакты"]
 
 <!DOCTYPE html>
 html(lang="en")
@@ -13,6 +13,7 @@ html(lang="en")
     title Yoga
   body
     header.header
+      .section-number 01
       .header-top
         nav.nav-main
           ul.nav-list
@@ -28,8 +29,8 @@ html(lang="en")
         button.header-signup Запишитесь на бесплатное<br />пробное занятие
       .header-bottom
         ul.social-list
-          li.social-item: i.fab.fa-vk
-          li.social-item: i.fab.fa-twitter
-          li.social-item: i.fab.fa-facebook-f
+          li.social-item: a: i.fab.fa-vk
+          li.social-item: a: i.fab.fa-twitter
+          li.social-item: a: i.fab.fa-facebook-f
         span.city Санкт-Петербург
 
