@@ -255,6 +255,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 150px;
   background: url("../img/directions-bg.png") no-repeat center -40px; }
 
 .directions-title {
@@ -334,6 +335,112 @@
   .cards-btn-more:hover {
     color: #FFFFFF;
     background-color: #8E80A9; }
+
+.subscribtion {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../img/subscription-bg.png") no-repeat center -50px;
+  background-size: cover; }
+
+.subscribtion-title {
+  margin-bottom: 50px;
+  font-size: 30px; }
+
+.subscribtion-monts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin-bottom: 50px; }
+
+.subscribtion-month-item {
+  margin-right: 50px;
+  font-size: 12px;
+  color: #E65C7B;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  .subscribtion-month-item:last-child {
+    margin-right: 0; }
+  .subscribtion-month-item.smi-active {
+    border-bottom: 1px solid #E65C7B; }
+    .subscribtion-month-item.smi-active:hover {
+      border-bottom: 1px solid #8E80A9; }
+  .subscribtion-month-item:hover {
+    color: #8E80A9; }
+
+.price-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none; }
+
+.price-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  width: 263px;
+  height: 237px;
+  margin-right: 40px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
+          box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2); }
+  .price-item:last-child {
+    margin-right: 0; }
+  .price-item:nth-child(2) {
+    width: 331px;
+    height: 331px; }
+
+.price-title {
+  margin-bottom: 20px; }
+
+.price-time {
+  margin-bottom: 25px;
+  font-size: 12px;
+  text-align: center;
+  color: #E65C7B; }
+
+.price {
+  font-size: 30px;
+  font-weight: 700; }
+
+.price-btn {
+  margin-top: 25px;
+  padding: 15px 50px;
+  font-size: 12px;
+  color: #FFFFFF;
+  background-color: #8E80A9;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  .price-btn:hover {
+    background-color: #E65C7B; }
 
 * {
   margin: 0;

@@ -1,1 +1,1 @@
-"use strict";var $open=$(".nav-open"),$close=$(".nav-close"),$menu=$(".nav-list");$open.on("click",function(){$menu.addClass("nav-in")}),$close.on("click",function(){$menu.removeClass("nav-in")});
+"use strict";$(document).ready(function(){var a=$(".nav-open"),b=$(".nav-close"),c=$(".nav-list");a.on("click",function(){c.addClass("nav-in")}),b.on("click",function(){c.removeClass("nav-in")});var d=$(".subscribtion-month-item");d.bind("click",function(){d.siblings().removeClass("smi-active"),$(this).addClass("smi-active")})});
