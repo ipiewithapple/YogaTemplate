@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  height: 100vh;
+  height: 110vh;
   background: url('../img/header-bg.png') no-repeat center center;
   background-size: cover;
 }
@@ -92,6 +92,11 @@
   background: none;
   border: none;
   cursor: pointer;
+  transition: $anim;
+
+  &.nav-out{
+    transform: translateY(-100px);
+  }
 
 
   &:hover {

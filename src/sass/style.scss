@@ -24,9 +24,13 @@ $anim: all .2s ease-in-out;
 // Imports
 
 @import './mixins.scss';
+
 @import './blocks/header.scss';
 @import './blocks/directions.scss';
 @import './blocks/subscription.scss';
+@import './blocks/team.scss';
+
+@import './media.scss';
 
 // Global
 
@@ -41,6 +45,8 @@ $anim: all .2s ease-in-out;
 }
 
 body {
+  position: relative;
+  z-index: 1;
   font-family: "Geometria";
   font-size: 16px;
   color: $main-text;

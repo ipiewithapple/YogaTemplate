@@ -1,0 +1,35 @@
+// min 1920px
+
+@media(min-width:1920px) {
+
+  // Cards
+  .cards-block {
+    width: 50%;
+  }
+
+  // Subscription
+  .subscribtion {
+    background: url('../img/subscription-bg.png') no-repeat center -210px;
+    background-size: cover;
+  }
+}
+
+// max 1440px
+
+@media (max-width: 1440px) {
+
+  // Header
+  .header {
+    height: 90vh;
+  }
+}
+
+// max 1366px
+
+@media (max-width: 1366px) {
+
+  // Header
+  .header {
+    height: 100vh;
+  }
+}

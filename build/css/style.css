@@ -12,7 +12,7 @@
 
 .header {
   position: relative;
-  height: 100vh;
+  height: 110vh;
   background: url("../img/header-bg.png") no-repeat center center;
   background-size: cover; }
 
@@ -114,7 +114,12 @@
           align-items: center;
   background: none;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  .nav-open.nav-out {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px); }
   .nav-open:hover .nav-menu {
     color: #E65C7B; }
   .nav-open:hover .nav-btn,
@@ -348,6 +353,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 150px;
   background: url("../img/subscription-bg.png") no-repeat center -50px;
   background-size: cover; }
 
@@ -442,6 +448,25 @@
   .price-btn:hover {
     background-color: #E65C7B; }
 
+.team {
+  position: relative;
+  z-index: 1; }
+
+@media (min-width: 1920px) {
+  .cards-block {
+    width: 50%; }
+  .subscribtion {
+    background: url("../img/subscription-bg.png") no-repeat center -210px;
+    background-size: cover; } }
+
+@media (max-width: 1440px) {
+  .header {
+    height: 90vh; } }
+
+@media (max-width: 1366px) {
+  .header {
+    height: 100vh; } }
+
 * {
   margin: 0;
   padding: 0; }
@@ -453,6 +478,8 @@
     background-color: #8E80A9; }
 
 body {
+  position: relative;
+  z-index: 1;
   font-family: "Geometria";
   font-size: 16px;
   color: #8E80A9;
