@@ -15,7 +15,7 @@ $(document).ready(function () {
   }); // Subscribtion months
 
   var $months = $('.subscribtion-month-item');
-  $months.bind('click', function () {
+  $months.on('click', function () {
     $months.siblings().removeClass('smi-active');
     $(this).addClass('smi-active');
   });

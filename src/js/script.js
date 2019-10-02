@@ -20,7 +20,7 @@ $(document).ready(function () {
 
   const $months = $('.subscribtion-month-item');
 
-  $months.bind('click', function () {
+  $months.on('click', function () {
     $months.siblings().removeClass('smi-active');
     $(this).addClass('smi-active');
   });

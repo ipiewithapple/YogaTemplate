@@ -449,8 +449,108 @@
     background-color: #E65C7B; }
 
 .team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.team-title {
+  margin-bottom: 120px;
+  font-size: 30px; }
+
+.team-list {
+  list-style: none; }
+
+.team-item {
   position: relative;
-  z-index: 1; }
+  margin-bottom: 90px; }
+
+.team-foto {
+  position: absolute;
+  left: -23px;
+  bottom: 17px;
+  width: 145px;
+  height: 145px; }
+
+.coach {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 400px;
+  height: 105px;
+  background-color: #FFFFFF; }
+
+.coach-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0;
+  padding-left: 140px; }
+
+.coach-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0;
+  padding-right: 25px; }
+
+.coach-name {
+  font-size: 12px;
+  color: #E65C7B; }
+
+.coach-yoga {
+  font-size: 12px; }
+
+.coach-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none; }
+
+.coach-link {
+  color: #8E80A9;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  .coach-link:first-child {
+    margin-right: 10px; }
+  .coach-link:hover {
+    color: #E65C7B; }
+
+.coach-look {
+  font-size: 12px;
+  color: #8E80A9;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #8E80A9;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  .coach-look:hover {
+    color: #E65C7B;
+    border-bottom: 1px solid #E65C7B; }
 
 @media (min-width: 1920px) {
   .cards-block {
@@ -511,3 +611,6 @@ img {
     margin-left: 10px;
     background-color: #8E80A9;
     opacity: .5; }
+
+.team-reviews-bg {
+  background: url("../img/team-bg1.png") left center no-repeat; }

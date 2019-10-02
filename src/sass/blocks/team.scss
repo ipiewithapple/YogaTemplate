@@ -1,4 +1,93 @@
-.team{
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-title {
+  margin-bottom: 120px;
+  font-size: 30px;
+}
+
+.team-list {
+  list-style: none;
+}
+
+.team-item {
   position: relative;
-  z-index: 1;
+  margin-bottom: 90px;
+}
+
+.team-foto {
+  position: absolute;
+  left: -23px;
+  bottom: 17px;
+  width: 145px;
+  height: 145px;
+}
+
+.coach {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  height: 105px;
+  background-color: #FFFFFF;
+}
+
+.coach-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+  padding-left: 140px;
+}
+
+.coach-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+  padding-right: 25px;
+}
+
+.coach-name {
+  font-size: 12px;
+  color: $secondary-text;
+}
+
+.coach-yoga {
+  font-size: 12px;
+}
+
+.coach-social {
+  display: flex;
+  list-style: none;
+}
+
+.coach-link {
+  color: $main-text;
+  transition: $anim;
+
+  &:first-child {
+    margin-right: 10px;
+  }
+
+  &:hover {
+    color: $secondary-text;
+  }
+}
+
+.coach-look {
+  font-size: 12px;
+  color: $main-text;
+  background: none;
+  border: none;
+  border-bottom: 1px solid $main-text;
+  cursor: pointer;
+  transition: $anim;
+
+  &:hover {
+    color: $secondary-text;
+    border-bottom: 1px solid $secondary-text;
+  }
 }

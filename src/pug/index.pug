@@ -1,4 +1,4 @@
-- const navItems = ["Главная", "Направления", "Абонементы", "Наша команда", "Отзывы", "Контакты"]
+- const navItems = ["Направления", "Абонементы", "Наша команда", "Отзывы", "Контакты"]
 
 <!DOCTYPE html>
 html(lang="en")
@@ -61,7 +61,7 @@ html(lang="en")
                 p.card-timetable Пн, Ср, Пт – с 12:00 до 15:00<br>Вт, Чт – с 18:00 до 21:00
                 p.card-trainer Инструктор<br>Сквидвард Тентикалс
                 button.card-btn
-            button.cards-btn-more Смотреть больше
+            button.cards-btn-more Смотреть Смотреть больше
       section.subscribtion
         .section-number 03
         h2.subscribtion-title Абонементы
@@ -87,6 +87,47 @@ html(lang="en")
         section.team
           .section-number 04
           h2.team-title Наша команда
+          .team-list-slider
+            ul.team-list
+              li.team-item
+                img.team-foto(src="img/spongebob.jpg", alt="Спанч Боб")
+                .coach
+                  .coach-left
+                    p.coach-name Инструктор<br />Спанч Боб
+                    .coach-yoga Хатха-йога
+                  .coach-right
+                    ul.coach-social
+                      li
+                        a.coach-link(href="#"): i.fab.fa-vk
+                      li
+                        a.coach-link(href="#"): i.fab.fa-twitter
+                    button.coach-look Смотреть
+              li.team-item
+                img.team-foto(src="img/patrick.png", alt="Патрик Стар")
+                .coach
+                  .coach-left
+                    p.coach-name Инструктор<br />Патрик Стар
+                    .coach-yoga Флоу-йога
+                  .coach-right
+                    ul.coach-social
+                      li
+                        a.coach-link(href="#"): i.fab.fa-vk
+                      li
+                        a.coach-link(href="#"): i.fab.fa-twitter
+                    button.coach-look Смотреть
+              li.team-item
+                img.team-foto(src="img/squidward.jpg", alt="Сквидвард Тентикалс")
+                .coach
+                  .coach-left
+                    p.coach-name Инструктор<br />Сквидвард Тентикалс
+                    .coach-yoga Йога в гамаках
+                  .coach-right
+                    ul.coach-social
+                      li
+                        a.coach-link(href="#"): i.fab.fa-vk
+                      li
+                        a.coach-link(href="#"): i.fab.fa-twitter
+                    button.coach-look Смотреть
 
 
     //- scripts
