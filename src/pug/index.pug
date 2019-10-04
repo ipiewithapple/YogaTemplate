@@ -12,6 +12,7 @@ html(lang="en")
     link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css")
     title Yoga
   body
+    //- HEADER
     header.header
       .section-number 01
       .header-top
@@ -34,7 +35,9 @@ html(lang="en")
           li.social-item: a: i.fab.fa-twitter
           li.social-item: a: i.fab.fa-facebook-f
         span.city Санкт-Петербург
+    //- MAIN
     main.main
+      //- DIRECTIONS
       section.directions
         .section-number 02
         h2.directions-title Направления
@@ -59,9 +62,10 @@ html(lang="en")
               .card-desc
                 h3.card-title Кундалини-йога
                 p.card-timetable Пн, Ср, Пт – с 12:00 до 15:00<br>Вт, Чт – с 18:00 до 21:00
-                p.card-trainer Инструктор<br>Сквидвард Тентикалс
+                p.card-trainer Инструктор<br>Сквидвард
                 button.card-btn
             button.cards-btn-more Смотреть Смотреть больше
+      //- SUBSCRIBTION
       section.subscribtion
         .section-number 03
         h2.subscribtion-title Абонементы
@@ -83,51 +87,97 @@ html(lang="en")
             h3.price-title Вечер
             p.price-time Посещение<br>с 17:00 до 21:00
             span.price 2 000 Р
+      //- TEAM AND REVIEWS
       .team-reviews-bg
+        //- TEAM
         section.team
           .section-number 04
           h2.team-title Наша команда
-          .team-list-slider
-            ul.team-list
-              li.team-item
-                img.team-foto(src="img/spongebob.jpg", alt="Спанч Боб")
-                .coach
-                  .coach-left
-                    p.coach-name Инструктор<br />Спанч Боб
-                    .coach-yoga Хатха-йога
-                  .coach-right
-                    ul.coach-social
-                      li
-                        a.coach-link(href="#"): i.fab.fa-vk
-                      li
-                        a.coach-link(href="#"): i.fab.fa-twitter
-                    button.coach-look Смотреть
-              li.team-item
-                img.team-foto(src="img/patrick.png", alt="Патрик Стар")
-                .coach
-                  .coach-left
-                    p.coach-name Инструктор<br />Патрик Стар
-                    .coach-yoga Флоу-йога
-                  .coach-right
-                    ul.coach-social
-                      li
-                        a.coach-link(href="#"): i.fab.fa-vk
-                      li
-                        a.coach-link(href="#"): i.fab.fa-twitter
-                    button.coach-look Смотреть
-              li.team-item
-                img.team-foto(src="img/squidward.jpg", alt="Сквидвард Тентикалс")
-                .coach
-                  .coach-left
-                    p.coach-name Инструктор<br />Сквидвард Тентикалс
-                    .coach-yoga Йога в гамаках
-                  .coach-right
-                    ul.coach-social
-                      li
-                        a.coach-link(href="#"): i.fab.fa-vk
-                      li
-                        a.coach-link(href="#"): i.fab.fa-twitter
-                    button.coach-look Смотреть
+          .team-wrapper
+            .team-list-slider
+              ul.team-list
+                li.team-item
+                  img.team-foto(src="img/spongebob.jpg", alt="Спанч Боб")
+                  .coach
+                    .coach-left
+                      p.coach-name Инструктор<br />Губка Боб
+                      .coach-yoga Хатха-йога
+                    .coach-right
+                      ul.coach-social
+                        li
+                          a.coach-link(href="#"): i.fab.fa-vk
+                        li
+                          a.coach-link(href="#"): i.fab.fa-twitter
+                      button.coach-look Смотреть
+                li.team-item
+                  img.team-foto(src="img/patrick.png", alt="Патрик Стар")
+                  .coach
+                    .coach-left
+                      p.coach-name Инструктор<br />Патрик Стар
+                      .coach-yoga Флоу-йога
+                    .coach-right
+                      ul.coach-social
+                        li
+                          a.coach-link(href="#"): i.fab.fa-vk
+                        li
+                          a.coach-link(href="#"): i.fab.fa-twitter
+                      button.coach-look Смотреть
+                li.team-item
+                  img.team-foto(src="img/squidward.jpg", alt="Сквидвард Тентикалс")
+                  .coach
+                    .coach-left
+                      p.coach-name Инструктор<br />Сквидвард
+                      .coach-yoga Йога в гамаках
+                    .coach-right
+                      ul.coach-social
+                        li
+                          a.coach-link(href="#"): i.fab.fa-vk
+                        li
+                          a.coach-link(href="#"): i.fab.fa-twitter
+                      button.coach-look Смотреть
+              .team-slider-nav
+                button.team-slider-left: i.fas.fa-chevron-left
+                span.team-slider-pages 1 / 2
+                button.team-slider-right: i.fas.fa-chevron-right
+            .coach-more
+              span.coach-more-name Губка Боб
+              span.coach-more-exp Опыт преподавания: 8 лет
+              p.coach-more-desc Образование и опыт работы: Практикует с 2011 года, является
+                                |сертифицированным инструктором по флоу- йоге. Большой опыт преподавания
+                                |йоги для начинающих и продолжающих.
+              p.coach-more-desc Обучалась в Индии (International Association of Yoga: classical yoga,
+                                |master of principles yoga therapy), Непале (опыт медитативных
+                                |и дыхательных техник, проживание в Ашраме), Москва (Аштанга йога
+                                |центр 108 А. Константинова), Московский центр классической
+                                |йоги Виктора Бойко.
+              p.coach-more-desc Сертифицированный инструктор по фитнесу и йоге (БГУФК),
+                                |по массажу (Оздоровительный Витал – центр №401).
+              p.coach-more-desc Организатор и участник многочисленных конвенций
+                                |и семинаров по йоге, медитативным техникам
+                                |и здоровому питанию.
+        //- REVIEWS
+        section.reviews
+          .section-number 05
+          h2.directions-title Отзывы
+          ul.reviews-list
+            li.reviews-item
+              span.reviews-quotes "
+              blockquote.reviews-blockquote <p>Хожу на йогу вечером, чтобы расслабиться
+                                            |после  тяжелого трудового дня. И после занятий
+                                            |наступает спокойствие!</p>
+                                            <p>Йога это отличный способ быстро
+                                            |и качественно расслабиться.
+                                            |Спасибо инструктору Марине.</p>
+              .reviews-author Планктон
+            li.reviews-item
+              span.reviews-quotes "
+              blockquote.reviews-blockquote <p>Хожу на йогу вечером, чтобы расслабиться
+                                            |после  тяжелого трудового дня. И после занятий
+                                            |наступает спокойствие!</p>
+                                            <p>Йога это отличный способ быстро
+                                            |и качественно расслабиться.
+                                            |Спасибо инструктору Марине.</p>
+              .reviews-author Ларри
 
 
     //- scripts

@@ -60,3 +60,17 @@
     }
   }
 }
+
+@mixin team-slider-btn{
+  width: 45px;
+  height: 30px;
+  color: $main-text;
+  background: none;
+  border: 1px solid $main-text;
+  transition: $anim;
+
+  &:hover{
+    color: #FFFFFF;
+    background-color: $main-text;
+  }
+}

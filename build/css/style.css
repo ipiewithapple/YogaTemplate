@@ -449,6 +449,7 @@
     background-color: #E65C7B; }
 
 .team {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -458,14 +459,22 @@
           flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  margin-bottom: 140px; }
+
+.team-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 65%; }
 
 .team-title {
   margin-bottom: 120px;
   font-size: 30px; }
 
 .team-list {
-  list-style: none; }
+  list-style: none;
+  margin-right: 70px; }
 
 .team-item {
   position: relative;
@@ -478,6 +487,42 @@
   width: 145px;
   height: 145px; }
 
+.team-list-slider {
+  position: relative; }
+
+.team-slider-nav {
+  position: absolute;
+  right: 70px;
+  bottom: 0px; }
+
+.team-slider-left {
+  width: 45px;
+  height: 30px;
+  color: #8E80A9;
+  background: none;
+  border: 1px solid #8E80A9;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  .team-slider-left:hover {
+    color: #FFFFFF;
+    background-color: #8E80A9; }
+
+.team-slider-right {
+  width: 45px;
+  height: 30px;
+  color: #8E80A9;
+  background: none;
+  border: 1px solid #8E80A9;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  .team-slider-right:hover {
+    color: #FFFFFF;
+    background-color: #8E80A9; }
+
+.team-slider-pages {
+  margin: 0 20px;
+  font-size: 12px; }
+
 .coach {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -487,7 +532,9 @@
           justify-content: space-between;
   width: 400px;
   height: 105px;
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
+          box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2); }
 
 .coach-left {
   display: -webkit-box;
@@ -552,12 +599,40 @@
     color: #E65C7B;
     border-bottom: 1px solid #E65C7B; }
 
+.coach-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.coach-more-name {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold; }
+
+.coach-more-exp {
+  margin-bottom: 25px;
+  font-size: 14px;
+  color: #E65C7B; }
+
+.coach-more-desc {
+  margin-bottom: 20px;
+  font-size: 12px; }
+
+.reviews {
+  position: relative; }
+
 @media (min-width: 1920px) {
   .cards-block {
     width: 50%; }
   .subscribtion {
     background: url("../img/subscription-bg.png") no-repeat center -210px;
-    background-size: cover; } }
+    background-size: cover; }
+  .team-wrapper {
+    width: 50%; } }
 
 @media (max-width: 1440px) {
   .header {
@@ -613,4 +688,14 @@ img {
     opacity: .5; }
 
 .team-reviews-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: url("../img/team-bg1.png") left center no-repeat; }

@@ -1,7 +1,14 @@
 .team {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 140px;
+}
+
+.team-wrapper{
+  display: flex;
+  width: 65%;
 }
 
 .team-title {
@@ -11,6 +18,7 @@
 
 .team-list {
   list-style: none;
+  margin-right: 70px;
 }
 
 .team-item {
@@ -26,12 +34,40 @@
   height: 145px;
 }
 
+// Team slider
+
+.team-list-slider{
+  position: relative;
+}
+
+.team-slider-nav{
+  position: absolute;
+  right: 70px;
+  bottom: 0px;
+}
+
+.team-slider-left{
+ @include team-slider-btn;
+}
+
+.team-slider-right{
+  @include team-slider-btn;
+}
+
+.team-slider-pages{
+  margin: 0 20px;
+  font-size: 12px;
+}
+
+//  Coach
+
 .coach {
   display: flex;
   justify-content: space-between;
   width: 400px;
   height: 105px;
   background-color: #FFFFFF;
+  box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
 }
 
 .coach-left {
@@ -90,4 +126,29 @@
     color: $secondary-text;
     border-bottom: 1px solid $secondary-text;
   }
+}
+
+// Coach more
+
+.coach-more{
+  display: flex;
+  flex-direction: column;
+}
+
+.coach-more-name{
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.coach-more-exp{
+  margin-bottom: 25px;
+  font-size: 14px;
+  color: $secondary-text;
+
+}
+
+.coach-more-desc{
+  margin-bottom: 20px;
+  font-size: 12px;
 }

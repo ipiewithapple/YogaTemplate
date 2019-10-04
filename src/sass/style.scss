@@ -29,6 +29,7 @@ $anim: all .2s ease-in-out;
 @import './blocks/directions.scss';
 @import './blocks/subscription.scss';
 @import './blocks/team.scss';
+@import './blocks/reviews.scss';
 
 @import './media.scss';
 
@@ -81,5 +82,8 @@ img {
 }
 
 .team-reviews-bg{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: url("../img/team-bg1.png") left center no-repeat;
 }
