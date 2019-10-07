@@ -97,7 +97,7 @@ html(lang="en")
             .team-list-slider
               ul.team-list
                 li.team-item
-                  img.team-foto(src="img/spongebob.jpg", alt="Спанч Боб")
+                  img.team-photo(src="img/spongebob.jpg", alt="Спанч Боб")
                   .coach
                     .coach-left
                       p.coach-name Инструктор<br />Губка Боб
@@ -110,7 +110,7 @@ html(lang="en")
                           a.coach-link(href="#"): i.fab.fa-twitter
                       button.coach-look Смотреть
                 li.team-item
-                  img.team-foto(src="img/patrick.png", alt="Патрик Стар")
+                  img.team-photo(src="img/patrick.png", alt="Патрик Стар")
                   .coach
                     .coach-left
                       p.coach-name Инструктор<br />Патрик Стар
@@ -123,7 +123,7 @@ html(lang="en")
                           a.coach-link(href="#"): i.fab.fa-twitter
                       button.coach-look Смотреть
                 li.team-item
-                  img.team-foto(src="img/squidward.jpg", alt="Сквидвард Тентикалс")
+                  img.team-photo(src="img/squidward.jpg", alt="Сквидвард Тентикалс")
                   .coach
                     .coach-left
                       p.coach-name Инструктор<br />Сквидвард
@@ -158,7 +158,7 @@ html(lang="en")
         //- REVIEWS
         section.reviews
           .section-number 05
-          h2.directions-title Отзывы
+          h2.reviews-title Отзывы
           ul.reviews-list
             li.reviews-item
               span.reviews-quotes "
@@ -168,7 +168,17 @@ html(lang="en")
                                             <p>Йога это отличный способ быстро
                                             |и качественно расслабиться.
                                             |Спасибо инструктору Марине.</p>
-              .reviews-author Планктон
+              .reviews-author
+                img.reviews-author-photo(src="img/plankton.jpg", alt="Планктон")
+                ul.reviews-author-list
+                  li.reviews-author-name Планктон
+                  lo.reviews-author-date 16 мая 2018
+                  li.reviews-author-social
+                   ul.coach-social
+                        li
+                          a.coach-link(href="#"): i.fab.fa-vk
+                        li
+                          a.coach-link(href="#"): i.fab.fa-twitter
             li.reviews-item
               span.reviews-quotes "
               blockquote.reviews-blockquote <p>Хожу на йогу вечером, чтобы расслабиться
@@ -177,7 +187,20 @@ html(lang="en")
                                             <p>Йога это отличный способ быстро
                                             |и качественно расслабиться.
                                             |Спасибо инструктору Марине.</p>
-              .reviews-author Ларри
+              .reviews-author
+                img.reviews-author-photo(src="img/larry.png", alt="Ларри Омар")
+                ul.reviews-author-list
+                  li.reviews-author-name Планктон
+                  lo.reviews-author-date 13 мая 2019
+                  li.reviews-author-social
+                   ul.coach-social
+                        li
+                          a.coach-link(href="#"): i.fab.fa-vk
+                        li
+                          a.coach-link(href="#"): i.fab.fa-twitter
+            li: button.reviews-left: i.fas.fa-chevron-left
+            li: button.reviews-right: i.fas.fa-chevron-right
+
 
 
     //- scripts

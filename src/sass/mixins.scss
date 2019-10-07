@@ -64,13 +64,13 @@
 @mixin team-slider-btn{
   width: 45px;
   height: 30px;
-  color: $main-text;
-  background: none;
+  color: #FFFFFF;
+  background: $main-text;
   border: 1px solid $main-text;
   transition: $anim;
 
   &:hover{
-    color: #FFFFFF;
-    background-color: $main-text;
+    color: $main-text;
+    background: none;
   }
 }

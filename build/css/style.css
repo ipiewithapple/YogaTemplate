@@ -10,6 +10,12 @@
   font-style: normal;
   font-weight: normal; }
 
+@font-face {
+  font-family: "Francoisone";
+  src: url("../fonts/francoisone.woff") format("woff"), url("../fonts/francoisone.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal; }
+
 .header {
   position: relative;
   height: 110vh;
@@ -480,7 +486,7 @@
   position: relative;
   margin-bottom: 90px; }
 
-.team-foto {
+.team-photo {
   position: absolute;
   left: -23px;
   bottom: 17px;
@@ -498,26 +504,26 @@
 .team-slider-left {
   width: 45px;
   height: 30px;
-  color: #8E80A9;
-  background: none;
+  color: #FFFFFF;
+  background: #8E80A9;
   border: 1px solid #8E80A9;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
   .team-slider-left:hover {
-    color: #FFFFFF;
-    background-color: #8E80A9; }
+    color: #8E80A9;
+    background: none; }
 
 .team-slider-right {
   width: 45px;
   height: 30px;
-  color: #8E80A9;
-  background: none;
+  color: #FFFFFF;
+  background: #8E80A9;
   border: 1px solid #8E80A9;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
   .team-slider-right:hover {
-    color: #FFFFFF;
-    background-color: #8E80A9; }
+    color: #8E80A9;
+    background: none; }
 
 .team-slider-pages {
   margin: 0 20px;
@@ -623,7 +629,119 @@
   font-size: 12px; }
 
 .reviews {
-  position: relative; }
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%; }
+
+.reviews-title {
+  margin-bottom: 60px;
+  font-size: 30px; }
+
+.reviews-list {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 65%;
+  list-style: none; }
+
+.reviews-item {
+  width: 100%;
+  height: auto;
+  padding-left: 90px;
+  padding-right: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
+          box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2); }
+  .reviews-item:nth-child(odd) {
+    margin-right: 15px; }
+
+.reviews-quotes {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: -30px;
+  font-family: "Francoisone";
+  font-size: 80px;
+  opacity: .4; }
+
+.reviews-blockquote {
+  margin-bottom: 20px;
+  font-size: 12px; }
+  .reviews-blockquote p {
+    margin-bottom: 20px; }
+
+.reviews-author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.reviews-author-photo {
+  margin-right: 15px;
+  width: 50px;
+  height: 50px; }
+
+.reviews-author-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 30px;
+  list-style: none; }
+
+.reviews-author-name {
+  font-size: 12px;
+  color: #E65C7B; }
+
+.reviews-author-date {
+  margin-bottom: 5px;
+  font-size: 10px; }
+
+.reviews-left {
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  width: 45px;
+  height: 30px;
+  color: #FFFFFF;
+  background: #8E80A9;
+  border: 1px solid #8E80A9;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  .reviews-left:hover {
+    color: #8E80A9;
+    background: none; }
+
+.reviews-right {
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  width: 45px;
+  height: 30px;
+  color: #FFFFFF;
+  background: #8E80A9;
+  border: 1px solid #8E80A9;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  .reviews-right:hover {
+    color: #8E80A9;
+    background: none; }
 
 @media (min-width: 1920px) {
   .cards-block {
@@ -632,6 +750,8 @@
     background: url("../img/subscription-bg.png") no-repeat center -210px;
     background-size: cover; }
   .team-wrapper {
+    width: 50%; }
+  .reviews-list {
     width: 50%; } }
 
 @media (max-width: 1440px) {

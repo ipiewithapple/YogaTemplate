@@ -21,6 +21,14 @@ $anim: all .2s ease-in-out;
   font-weight: normal;
 }
 
+@font-face {
+  font-family: "Francoisone";
+  src: url("../fonts/francoisone.woff") format("woff"),
+    url("../fonts/francoisone.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
 // Imports
 
 @import './mixins.scss';
