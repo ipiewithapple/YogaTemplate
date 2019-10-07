@@ -38,6 +38,8 @@ $anim: all .2s ease-in-out;
 @import './blocks/subscription.scss';
 @import './blocks/team.scss';
 @import './blocks/reviews.scss';
+@import './blocks/contacts.scss';
+@import './blocks/footer.scss';
 
 @import './media.scss';
 
@@ -93,5 +95,6 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 150px;
   background: url("../img/team-bg1.png") left center no-repeat;
 }

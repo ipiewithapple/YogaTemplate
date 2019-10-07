@@ -612,7 +612,8 @@
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  background: url("../img/team-bg2.png") no-repeat top right; }
 
 .coach-more-name {
   margin-bottom: 10px;
@@ -743,6 +744,93 @@
     color: #8E80A9;
     background: none; }
 
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 70px 0;
+  background: url("../img/footer-bg.jpg") no-repeat center center;
+  background-size: cover; }
+
+.contacts-title {
+  margin-bottom: 40px; }
+
+.contacts-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none; }
+
+.contacts-item {
+  margin-right: 60px; }
+
+.contacts-list-title {
+  font-size: 14px; }
+
+.contacts-list-desc {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 12px; }
+
+.contacts-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.contacts-input {
+  margin-bottom: 50px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #8E80A9;
+  color: #8E80A9;
+  cursor: pointer; }
+  .contacts-input::-webkit-input-placeholder {
+    color: #8E80A9;
+    opacity: .4; }
+  .contacts-input::-moz-placeholder {
+    color: #8E80A9;
+    opacity: .4; }
+  .contacts-input:-ms-input-placeholder {
+    color: #8E80A9;
+    opacity: .4; }
+  .contacts-input::-ms-input-placeholder {
+    color: #8E80A9;
+    opacity: .4; }
+  .contacts-input::placeholder {
+    color: #8E80A9;
+    opacity: .4; }
+
+.contacts-submit {
+  padding: 20px 0;
+  color: #FFFFFF;
+  background-color: #E65C7B;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  .contacts-submit:hover {
+    background-color: #8E80A9; }
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 30px 0;
+  color: #FFFFFF;
+  background-color: #8E80A9; }
+
 @media (min-width: 1920px) {
   .cards-block {
     width: 50%; }
@@ -818,4 +906,5 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 150px;
   background: url("../img/team-bg1.png") left center no-repeat; }
