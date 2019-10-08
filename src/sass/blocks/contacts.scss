@@ -5,6 +5,16 @@
   padding: 70px 0;
   background: url("../img/footer-bg.jpg") no-repeat center center;
   background-size: cover;
+
+  &>div {
+    display: flex;
+    justify-content: center;
+    width: 65%;
+  }
+}
+
+.contacts-wrapper{
+  width: 50%;
 }
 
 .contacts-title{
@@ -33,6 +43,7 @@
 .contacts-form {
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
 
 .contacts-input{

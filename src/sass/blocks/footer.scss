@@ -1,7 +1,13 @@
 .footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding: 30px 0;
   color: #FFFFFF;
   background-color: $main-text;
+}
+
+.footer-wrapper{
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
 }

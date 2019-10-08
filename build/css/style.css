@@ -757,6 +757,17 @@
   padding: 70px 0;
   background: url("../img/footer-bg.jpg") no-repeat center center;
   background-size: cover; }
+  .contacts > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 65%; }
+
+.contacts-wrapper {
+  width: 50%; }
 
 .contacts-title {
   margin-bottom: 40px; }
@@ -785,7 +796,8 @@
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  width: 50%; }
 
 .contacts-input {
   margin-bottom: 50px;
@@ -825,11 +837,21 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 30px 0;
   color: #FFFFFF;
   background-color: #8E80A9; }
+
+.footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 65%; }
 
 @media (min-width: 1920px) {
   .cards-block {
@@ -840,6 +862,10 @@
   .team-wrapper {
     width: 50%; }
   .reviews-list {
+    width: 50%; }
+  .contacts > div {
+    width: 50%; }
+  .footer-wrapper {
     width: 50%; } }
 
 @media (max-width: 1440px) {

@@ -202,31 +202,33 @@ html(lang="en")
             li: button.reviews-right: i.fas.fa-chevron-right
       //- CONTACTS
       section.contacts
-        .contacts-wrapper
-          ul.contacts-list
-            li.contacts-item
-              h3.contacts-list-title Адрес:
-              span.contacts-list-desc 124 Конч Стрит, Бикини Боттом
-              h3.contacts-list-title График работы:
-              span.contacts-list-desc Пн-Вс с 11:00 до 21:00
-            li.contacts-item
-              h3.contacts-list-title Телефон:
-              span.contacts-list-desc 8 (888) 111-11-11
-              h3.contacts-list-title Email:
-              span.contacts-list-desc yogaspongebob@gmail.com
-          ul.social-list
-            li.social-item: a: i.fab.fa-vk
-            li.social-item: a: i.fab.fa-twitter
-            li.social-item: a: i.fab.fa-facebook-f
-        form.contacts-form
-          h2.contacts-title Запишитесь на бесплатное<br />пробное занятие
-          input.contacts-input(type="text" placeholder="Ваше имя")
-          input.contacts-input(type="tel" placeholder="Ваш телефон")
-          input.contacts-submit(type="submit" value="Оставить заявку")
+        div
+          .contacts-wrapper
+            ul.contacts-list
+              li.contacts-item
+                h3.contacts-list-title Адрес:
+                span.contacts-list-desc 124 Конч Стрит, Бикини Боттом
+                h3.contacts-list-title График работы:
+                span.contacts-list-desc Пн-Вс с 11:00 до 21:00
+              li.contacts-item
+                h3.contacts-list-title Телефон:
+                span.contacts-list-desc 8 (888) 111-11-11
+                h3.contacts-list-title Email:
+                span.contacts-list-desc yogaspongebob@gmail.com
+            ul.social-list
+              li.social-item: a: i.fab.fa-vk
+              li.social-item: a: i.fab.fa-twitter
+              li.social-item: a: i.fab.fa-facebook-f
+          form.contacts-form
+            h2.contacts-title Запишитесь на бесплатное<br />пробное занятие
+            input.contacts-input(type="text" placeholder="Ваше имя")
+            input.contacts-input(type="tel" placeholder="Ваш телефон")
+            input.contacts-submit(type="submit" value="Оставить заявку")
       //- FOOTER
       footer.footer
-       span.footer-url: a yogaspongebob.com
-       span.footer-copy © 2018   Все права защищены
+        .footer-wrapper
+          span.footer-url: a yogaspongebob.com
+          span.footer-copy © 2018   Все права защищены
 
 
     //- scripts
