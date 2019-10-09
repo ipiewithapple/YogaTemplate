@@ -25,7 +25,7 @@
 
   // Contacts
 
-  .contacts>div{
+  .contacts>div {
     width: 50%;
   }
 
@@ -53,5 +53,230 @@
   // Header
   .header {
     height: 100vh;
+  }
+
+  // Directions
+  .cards-block {
+    width: 70%;
+  }
+}
+
+// max 1024px
+
+@media (max-width: 1024px) {
+
+  // Other
+  h2 {
+    font-size: 21px;
+  }
+
+  .section-number {
+    font-size: 18px;
+
+    &::after {
+      width: 25px;
+    }
+  }
+
+  // Subscriptions
+  .price-list {
+    width: 85%;
+  }
+
+  // Header
+  .header-logo {
+    font-size: 180px;
+  }
+
+  .header-slogan {
+    margin-left: 0;
+  }
+
+  // Directions
+  .cards-block {
+    width: 90%;
+  }
+
+  // Contacts
+  .contacts-wrapper {
+    width: 85%;
+  }
+
+  .contacts-item {
+    margin-right: 30px;
+  }
+}
+
+// max 768px
+
+@media (max-width: 768px) {
+
+  // Header
+  .header {
+    height: auto;
+  }
+
+  .header-logo {
+    padding-left: 40px;
+    font-size: 144px;
+    line-height: 144px;
+    letter-spacing: 40px;
+  }
+
+  .header-slogan {
+    margin-left: -20%;
+    font-size: 24px;
+  }
+
+  //Directions
+  .cards-block {
+    width: 85%;
+  }
+
+  .card {
+    & .card-desc {
+      padding: 20px;
+
+      & .card-title {
+        font-size: 12px;
+      }
+
+      & .card-timetable,
+      .card-trainer {
+        font-size: 10px;
+      }
+
+      & .card-btn {
+        width: 40px;
+      }
+    }
+  }
+
+  .cards-desktop {
+    width: 70%;
+    margin-left: 15px;
+
+    & .card {
+      & .card-img {
+        width: 150px;
+        height: auto;
+      }
+
+      & .card-desc {
+        & .card-btn {
+          right: 20px;
+          bottom: 20px;
+          width: 30px;
+          height: 20px;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  .cards-btn-more {
+    height: 30px;
+    align-self: flex-end;
+  }
+
+
+  // Subscription
+  .price-item {
+    width: 175px;
+    height: 160px;
+    margin-right: 20px;
+
+    &:nth-child(2) {
+      width: 220px;
+      height: 220px;
+    }
+  }
+
+  .price-time {
+    font-size: 10px;
+  }
+
+  .price {
+    font-size: 21px;
+  }
+
+  .price-btn {
+    padding: 10px 20px;
+    font-size: 10px;
+  }
+
+  // Team
+  .team-wrapper {
+    width: 75%;
+  }
+
+  .team-photo {
+    width: 90px;
+    height: 90px;
+  }
+
+  .coach {
+    width: 255px;
+    height: 65px;
+  }
+
+  .coach-more-desc {
+    font-size: 10px;
+  }
+
+  .coach-left {
+    padding: 10px 0 10px 80px;
+  }
+
+  .coach-right {
+    padding: 10px 15px 10px 0;
+  }
+
+  // Reviews
+  .reviews-list {
+    flex-direction: column;
+  }
+
+  .reviews-item {
+    margin-bottom: 20px;
+  }
+
+  .reviews-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reviews-left,
+  .reviews-right {
+    position: relative;
+  }
+
+  .reviews-pages {
+    display: block;
+  }
+
+  // Contacts
+  .contacts-wrapper {
+    display: none;
+  }
+
+  .contacts-form {
+    width: 85%;
+  }
+
+  // Footer
+  .footer-wrapper {
+    flex-direction: column;
+    width: 85%;
+  }
+
+  .contacts-footer {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .footer-url {
+    margin-bottom: 10px;
   }
 }

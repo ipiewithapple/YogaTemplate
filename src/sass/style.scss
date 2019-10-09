@@ -29,21 +29,7 @@ $anim: all .2s ease-in-out;
   font-weight: normal;
 }
 
-// Imports
-
-@import './mixins.scss';
-
-@import './blocks/header.scss';
-@import './blocks/directions.scss';
-@import './blocks/subscription.scss';
-@import './blocks/team.scss';
-@import './blocks/reviews.scss';
-@import './blocks/contacts.scss';
-@import './blocks/footer.scss';
-
-@import './media.scss';
-
-// Global
+// Other
 
 * {
   margin: 0;
@@ -62,6 +48,10 @@ body {
   font-size: 16px;
   color: $main-text;
   background-color: #FCF8FE;
+}
+
+h2 {
+  font-size: 30px;
 }
 
 img {
@@ -98,3 +88,17 @@ img {
   margin-bottom: 150px;
   background: url("../img/team-bg1.png") left center no-repeat;
 }
+
+// Imports
+
+@import './mixins.scss';
+
+@import './blocks/header.scss';
+@import './blocks/directions.scss';
+@import './blocks/subscription.scss';
+@import './blocks/team.scss';
+@import './blocks/reviews.scss';
+@import './blocks/contacts.scss';
+@import './blocks/footer.scss';
+
+@import './media.scss';

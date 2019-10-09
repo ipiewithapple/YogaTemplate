@@ -6,8 +6,17 @@
   background-color: $main-text;
 }
 
-.footer-wrapper{
+.footer-wrapper {
   display: flex;
   justify-content: space-between;
   width: 65%;
+}
+
+.contacts-footer {
+  display: none;
+}
+
+.footer-url,
+.footer-copy {
+  opacity: .5;
 }

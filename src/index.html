@@ -46,7 +46,7 @@
               <h3 class="card-title">Хатха-йога</h3>
               <p class="card-timetable">Пн, Ср, Пт – с 12:00 до 15:00<br>Вт, Чт – с 18:00 до 21:00</p>
               <p class="card-trainer">Инструктор<br>Губка Боб</p>
-              <button class="card-btn"></button>
+              <button class="card-btn"><i class="fas fa-chevron-right"></i></button>
             </div>
           </div>
           <div class="cards-desktop">
@@ -55,7 +55,7 @@
                 <h3 class="card-title">Ашатанга-йога</h3>
                 <p class="card-timetable">Пн, Ср, Пт – с 11:00 до 14:00<br>Вт, Чт – с 19:00 до 21:00</p>
                 <p class="card-trainer">Инструктор<br>Патрик Стар</p>
-                <button class="card-btn"></button>
+                <button class="card-btn"><i class="fas fa-chevron-right"></i></button>
               </div>
             </div>
             <div class="card"><img class="card-img" src="img/card-3.jpg" alt="Кундалини-йога"/>
@@ -63,7 +63,7 @@
                 <h3 class="card-title">Кундалини-йога</h3>
                 <p class="card-timetable">Пн, Ср, Пт – с 12:00 до 15:00<br>Вт, Чт – с 18:00 до 21:00</p>
                 <p class="card-trainer">Инструктор<br>Сквидвард</p>
-                <button class="card-btn"></button>
+                <button class="card-btn"><i class="fas fa-chevron-right"></i></button>
               </div>
             </div>
             <button class="cards-btn-more">Смотреть Смотреть больше</button>
@@ -215,10 +215,15 @@
               </div>
             </li>
             <li>
-              <button class="reviews-left"><i class="fas fa-chevron-left"></i></button>
-            </li>
-            <li>
-              <button class="reviews-right"><i class="fas fa-chevron-right"></i></button>
+              <ul class="reviews-btn">
+                <li>
+                  <button class="reviews-left"><i class="fas fa-chevron-left"></i></button>
+                </li>
+                <li><span class="reviews-pages">1 / 2</span></li>
+                <li>
+                  <button class="reviews-right"><i class="fas fa-chevron-right"></i></button>
+                </li>
+              </ul>
             </li>
           </ul>
         </section>
@@ -251,7 +256,25 @@
         </div>
       </section>
       <footer class="footer">
-        <div class="footer-wrapper"><span class="footer-url"><a>yogaspongebob.com</a></span><span class="footer-copy">© 2018   Все права защищены</span></div>
+        <div class="footer-wrapper">
+          <div class="contacts-wrapper contacts-footer">
+            <ul class="contacts-list">
+              <li class="contacts-item">
+                <h3 class="contacts-list-title">Адрес:</h3><span class="contacts-list-desc">124 Конч Стрит, Бикини Боттом</span>
+                <h3 class="contacts-list-title">График работы:</h3><span class="contacts-list-desc">Пн-Вс с 11:00 до 21:00</span>
+              </li>
+              <li class="contacts-item">
+                <h3 class="contacts-list-title">Телефон:</h3><span class="contacts-list-desc">8 (888) 111-11-11</span>
+                <h3 class="contacts-list-title">Email:</h3><span class="contacts-list-desc">yogaspongebob@gmail.com</span>
+              </li>
+            </ul>
+            <ul class="social-list">
+              <li class="social-item"><a><i class="fab fa-vk"></i></a></li>
+              <li class="social-item"><a><i class="fab fa-twitter"></i></a></li>
+              <li class="social-item"><a><i class="fab fa-facebook-f"></i></a></li>
+            </ul>
+          </div><span class="footer-url"><a>yogaspongebob.com</a></span><span class="footer-copy">© 2018   Все права защищены</span>
+        </div>
       </footer>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

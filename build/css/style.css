@@ -16,6 +16,68 @@
   font-style: normal;
   font-weight: normal; }
 
+* {
+  margin: 0;
+  padding: 0; }
+  *::-moz-selection {
+    color: #FFFFFF;
+    background-color: #8E80A9; }
+  *::selection {
+    color: #FFFFFF;
+    background-color: #8E80A9; }
+
+body {
+  position: relative;
+  z-index: 1;
+  font-family: "Geometria";
+  font-size: 16px;
+  color: #8E80A9;
+  background-color: #FCF8FE; }
+
+h2 {
+  font-size: 30px; }
+
+img {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.section-number {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30px;
+  font-weight: 700;
+  opacity: .5; }
+  .section-number::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    margin-left: 10px;
+    background-color: #8E80A9;
+    opacity: .5; }
+
+.team-reviews-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 150px;
+  background: url("../img/team-bg1.png") left center no-repeat; }
+
 .header {
   position: relative;
   height: 110vh;
@@ -270,7 +332,6 @@
   background: url("../img/directions-bg.png") no-repeat center -40px; }
 
 .directions-title {
-  font-size: 30px;
   margin-bottom: 65px; }
 
 .cards-block {
@@ -279,41 +340,50 @@
   display: flex;
   width: 65%; }
 
-.card {
-  margin-right: 30px;
-  margin-bottom: 30px; }
-  .card .card-desc {
-    position: relative;
-    padding: 45px;
-    background-color: #FFFFFF; }
-    .card .card-desc .card-title {
-      margin-bottom: 15px;
-      font-size: 16px; }
-    .card .card-desc .card-timetable {
-      margin-bottom: 15px;
-      font-size: 12px; }
-    .card .card-desc .card-trainer {
-      font-size: 12px;
-      color: #E65C7B; }
-    .card .card-desc .card-btn {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      width: 65px;
-      height: 100%;
-      background: url("../img/arr-r.svg") no-repeat center center;
-      background-color: #8E80A9;
-      border: none;
-      cursor: pointer;
-      -webkit-transition: all 0.2s ease-in-out;
-      transition: all 0.2s ease-in-out; }
-      .card .card-desc .card-btn:hover {
-        background-color: #E65C7B; }
+.card .card-desc {
+  position: relative;
+  padding: 45px;
+  background-color: #FFFFFF; }
+  .card .card-desc .card-title {
+    margin-bottom: 15px;
+    font-size: 16px; }
+  .card .card-desc .card-timetable {
+    margin-bottom: 15px;
+    font-size: 12px; }
+  .card .card-desc .card-trainer {
+    font-size: 12px;
+    color: #E65C7B; }
+  .card .card-desc .card-btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 65px;
+    height: 100%;
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: #8E80A9;
+    border: none;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    .card .card-desc .card-btn:hover {
+      background-color: #E65C7B; }
 
 .cards-desktop {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 30px; }
   .cards-desktop .card {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -332,8 +402,7 @@
         bottom: 35px; }
 
 .cards-btn-more {
-  margin-right: 30px;
-  width: calc(100% - 30px);
+  width: 100%;
   height: 50px;
   color: #8E80A9;
   background: #FFFFFF;
@@ -364,8 +433,7 @@
   background-size: cover; }
 
 .subscribtion-title {
-  margin-bottom: 50px;
-  font-size: 30px; }
+  margin-bottom: 50px; }
 
 .subscribtion-monts {
   display: -webkit-box;
@@ -475,8 +543,7 @@
   width: 65%; }
 
 .team-title {
-  margin-bottom: 120px;
-  font-size: 30px; }
+  margin-bottom: 120px; }
 
 .team-list {
   list-style: none;
@@ -644,8 +711,7 @@
   width: 100%; }
 
 .reviews-title {
-  margin-bottom: 60px;
-  font-size: 30px; }
+  margin-bottom: 60px; }
 
 .reviews-list {
   position: relative;
@@ -713,6 +779,12 @@
 .reviews-author-date {
   margin-bottom: 5px;
   font-size: 10px; }
+
+.reviews-btn {
+  list-style: none; }
+
+.reviews-pages {
+  display: none; }
 
 .reviews-left {
   position: absolute;
@@ -853,6 +925,13 @@
           justify-content: space-between;
   width: 65%; }
 
+.contacts-footer {
+  display: none; }
+
+.footer-url,
+.footer-copy {
+  opacity: .5; }
+
 @media (min-width: 1920px) {
   .cards-block {
     width: 50%; }
@@ -874,63 +953,130 @@
 
 @media (max-width: 1366px) {
   .header {
-    height: 100vh; } }
+    height: 100vh; }
+  .cards-block {
+    width: 70%; } }
 
-* {
-  margin: 0;
-  padding: 0; }
-  *::-moz-selection {
-    color: #FFFFFF;
-    background-color: #8E80A9; }
-  *::selection {
-    color: #FFFFFF;
-    background-color: #8E80A9; }
+@media (max-width: 1024px) {
+  h2 {
+    font-size: 21px; }
+  .section-number {
+    font-size: 18px; }
+    .section-number::after {
+      width: 25px; }
+  .price-list {
+    width: 85%; }
+  .header-logo {
+    font-size: 180px; }
+  .header-slogan {
+    margin-left: 0; }
+  .cards-block {
+    width: 90%; }
+  .contacts-wrapper {
+    width: 85%; }
+  .contacts-item {
+    margin-right: 30px; } }
 
-body {
-  position: relative;
-  z-index: 1;
-  font-family: "Geometria";
-  font-size: 16px;
-  color: #8E80A9;
-  background-color: #FCF8FE; }
-
-img {
-  display: block;
-  width: 100%;
-  height: auto; }
-
-.section-number {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 30px;
-  font-weight: 700;
-  opacity: .5; }
-  .section-number::after {
-    content: "";
+@media (max-width: 768px) {
+  .header {
+    height: auto; }
+  .header-logo {
+    padding-left: 40px;
+    font-size: 144px;
+    line-height: 144px;
+    letter-spacing: 40px; }
+  .header-slogan {
+    margin-left: -20%;
+    font-size: 24px; }
+  .cards-block {
+    width: 85%; }
+  .card .card-desc {
+    padding: 20px; }
+    .card .card-desc .card-title {
+      font-size: 12px; }
+    .card .card-desc .card-timetable,
+    .card .card-desc .card-trainer {
+      font-size: 10px; }
+    .card .card-desc .card-btn {
+      width: 40px; }
+  .cards-desktop {
+    width: 70%;
+    margin-left: 15px; }
+    .cards-desktop .card .card-img {
+      width: 150px;
+      height: auto; }
+    .cards-desktop .card .card-desc .card-btn {
+      right: 20px;
+      bottom: 20px;
+      width: 30px;
+      height: 20px;
+      font-size: 10px; }
+  .cards-btn-more {
+    height: 30px;
+    -ms-flex-item-align: end;
+        align-self: flex-end; }
+  .price-item {
+    width: 175px;
+    height: 160px;
+    margin-right: 20px; }
+    .price-item:nth-child(2) {
+      width: 220px;
+      height: 220px; }
+  .price-time {
+    font-size: 10px; }
+  .price {
+    font-size: 21px; }
+  .price-btn {
+    padding: 10px 20px;
+    font-size: 10px; }
+  .team-wrapper {
+    width: 75%; }
+  .team-photo {
+    width: 90px;
+    height: 90px; }
+  .coach {
+    width: 255px;
+    height: 65px; }
+  .coach-more-desc {
+    font-size: 10px; }
+  .coach-left {
+    padding: 10px 0 10px 80px; }
+  .coach-right {
+    padding: 10px 15px 10px 0; }
+  .reviews-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .reviews-item {
+    margin-bottom: 20px; }
+  .reviews-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .reviews-left,
+  .reviews-right {
+    position: relative; }
+  .reviews-pages {
+    display: block; }
+  .contacts-wrapper {
+    display: none; }
+  .contacts-form {
+    width: 85%; }
+  .footer-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 85%; }
+  .contacts-footer {
     display: block;
-    width: 50px;
-    height: 2px;
-    margin-left: 10px;
-    background-color: #8E80A9;
-    opacity: .5; }
-
-.team-reviews-bg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 150px;
-  background: url("../img/team-bg1.png") left center no-repeat; }
+    margin-bottom: 20px; }
+  .footer-url {
+    margin-bottom: 10px; } }

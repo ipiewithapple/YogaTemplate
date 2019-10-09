@@ -48,7 +48,7 @@ html(lang="en")
               h3.card-title Хатха-йога
               p.card-timetable Пн, Ср, Пт – с 12:00 до 15:00<br>Вт, Чт – с 18:00 до 21:00
               p.card-trainer Инструктор<br>Губка Боб
-              button.card-btn
+              button.card-btn: i.fas.fa-chevron-right
           .cards-desktop
             .card
               img.card-img(src="img/card-2.jpg", alt="Ашатанга-йога")
@@ -56,14 +56,14 @@ html(lang="en")
                 h3.card-title Ашатанга-йога
                 p.card-timetable Пн, Ср, Пт – с 11:00 до 14:00<br>Вт, Чт – с 19:00 до 21:00
                 p.card-trainer Инструктор<br>Патрик Стар
-                button.card-btn
+                button.card-btn: i.fas.fa-chevron-right
             .card
               img.card-img(src="img/card-3.jpg", alt="Кундалини-йога")
               .card-desc
                 h3.card-title Кундалини-йога
                 p.card-timetable Пн, Ср, Пт – с 12:00 до 15:00<br>Вт, Чт – с 18:00 до 21:00
                 p.card-trainer Инструктор<br>Сквидвард
-                button.card-btn
+                button.card-btn: i.fas.fa-chevron-right
             button.cards-btn-more Смотреть Смотреть больше
       //- SUBSCRIBTION
       section.subscribtion
@@ -198,8 +198,10 @@ html(lang="en")
                           a.coach-link(href="#"): i.fab.fa-vk
                         li
                           a.coach-link(href="#"): i.fab.fa-twitter
-            li: button.reviews-left: i.fas.fa-chevron-left
-            li: button.reviews-right: i.fas.fa-chevron-right
+            li: ul.reviews-btn
+              li: button.reviews-left: i.fas.fa-chevron-left
+              li: span.reviews-pages 1 / 2
+              li: button.reviews-right: i.fas.fa-chevron-right
       //- CONTACTS
       section.contacts
         div
@@ -227,6 +229,22 @@ html(lang="en")
       //- FOOTER
       footer.footer
         .footer-wrapper
+          .contacts-wrapper.contacts-footer
+            ul.contacts-list
+              li.contacts-item
+                h3.contacts-list-title Адрес:
+                span.contacts-list-desc 124 Конч Стрит, Бикини Боттом
+                h3.contacts-list-title График работы:
+                span.contacts-list-desc Пн-Вс с 11:00 до 21:00
+              li.contacts-item
+                h3.contacts-list-title Телефон:
+                span.contacts-list-desc 8 (888) 111-11-11
+                h3.contacts-list-title Email:
+                span.contacts-list-desc yogaspongebob@gmail.com
+            ul.social-list
+              li.social-item: a: i.fab.fa-vk
+              li.social-item: a: i.fab.fa-twitter
+              li.social-item: a: i.fab.fa-facebook-f
           span.footer-url: a yogaspongebob.com
           span.footer-copy © 2018   Все права защищены
 

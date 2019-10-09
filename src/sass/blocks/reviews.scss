@@ -8,7 +8,6 @@
 
 .reviews-title {
   margin-bottom: 60px;
-  font-size: 30px;
 }
 
 .reviews-list {
@@ -73,19 +72,27 @@
   color: $secondary-text;
 }
 
-.reviews-author-date{
+.reviews-author-date {
   margin-bottom: 5px;
   font-size: 10px;
 }
 
-.reviews-left{
+.reviews-btn {
+  list-style: none;
+}
+
+.reviews-pages {
+  display: none;
+}
+
+.reviews-left {
   position: absolute;
   left: -15px;
   top: 50%;
   @include team-slider-btn;
 }
 
-.reviews-right{
+.reviews-right {
   position: absolute;
   right: -15px;
   top: 50%;
