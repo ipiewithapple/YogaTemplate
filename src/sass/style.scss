@@ -89,6 +89,24 @@ img {
   background: url("../img/team-bg1.png") left center no-repeat;
 }
 
+.social-min {
+  display: flex;
+  list-style: none;
+}
+
+.social-min-link {
+  color: $main-text;
+  transition: $anim;
+
+  &:first-child {
+    margin-right: 10px;
+  }
+
+  &:hover {
+    color: $secondary-text;
+  }
+}
+
 // Imports
 
 @import './mixins.scss';

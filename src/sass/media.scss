@@ -114,6 +114,11 @@
   // Header
   .header {
     height: auto;
+    margin-bottom: 90px;
+  }
+
+  .city {
+    font-size: 12px;
   }
 
   .header-logo {
@@ -278,5 +283,71 @@
 
   .footer-url {
     margin-bottom: 10px;
+  }
+}
+
+// max 425px
+
+@media (max-width: 425px) {
+
+  // Other
+  .section-number {
+    display: none;
+  }
+
+  // Header
+  .nav-list{
+    flex-direction: column;
+    height: auto;
+  }
+
+  .nav-list-item{
+    padding: 10px 0;
+  }
+
+  .nav-close{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+  }
+
+  .header {
+    margin-bottom: 70px;
+  }
+
+  .header-top {
+    padding: 20px 5% 0;
+    margin-bottom: 70px;
+  }
+
+  .header-logo {
+    font-size: 67px;
+    line-height: 67px;
+    letter-spacing: 20px;
+    padding-left: 20px;
+  }
+
+  .header-slogan {
+    font-size: 18px;
+    margin-left: 0;
+  }
+
+  .header-mid {
+    margin-bottom: 0;
+  }
+
+  .header-bottom {
+    display: none;
+  }
+
+  .header-signup {
+    font-size: 10px;
+    line-height: 12px;
+
+    &::before {
+      width: 30px;
+      height: 25px;
+      background-size: 30%;
+    }
   }
 }

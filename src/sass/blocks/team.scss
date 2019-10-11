@@ -94,24 +94,6 @@
   font-size: 12px;
 }
 
-.coach-social {
-  display: flex;
-  list-style: none;
-}
-
-.coach-link {
-  color: $main-text;
-  transition: $anim;
-
-  &:first-child {
-    margin-right: 10px;
-  }
-
-  &:hover {
-    color: $secondary-text;
-  }
-}
-
 .coach-look {
   font-size: 12px;
   color: $main-text;
