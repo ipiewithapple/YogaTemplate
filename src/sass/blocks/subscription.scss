@@ -91,6 +91,7 @@
 }
 
 .price-btn {
+  display: none;
   margin-top: 25px;
   padding: 15px 50px;
   font-size: 12px;
@@ -103,4 +104,8 @@
   &:hover{
     background-color: $secondary-text;
   }
+}
+
+.price-item:nth-child(2) .price-btn {
+  display: block;
 }

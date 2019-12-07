@@ -528,6 +528,7 @@ img {
   font-weight: 700; }
 
 .price-btn {
+  display: none;
   margin-top: 25px;
   padding: 15px 50px;
   font-size: 12px;
@@ -539,6 +540,9 @@ img {
   transition: all 0.2s ease-in-out; }
   .price-btn:hover {
     background-color: #E65C7B; }
+
+.price-item:nth-child(2) .price-btn {
+  display: block; }
 
 .team {
   position: relative;
@@ -564,8 +568,7 @@ img {
   margin-bottom: 120px; }
 
 .team-list {
-  list-style: none;
-  margin-right: 70px; }
+  list-style: none; }
 
 .team-item {
   position: relative;
@@ -579,7 +582,8 @@ img {
   height: 145px; }
 
 .team-list-slider {
-  position: relative; }
+  position: relative;
+  margin-right: 70px; }
 
 .team-slider-nav {
   position: absolute;
@@ -676,6 +680,7 @@ img {
     border-bottom: 1px solid #E65C7B; }
 
 .coach-more {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -950,17 +955,13 @@ img {
   .footer-wrapper {
     width: 50%; } }
 
-@media (max-width: 1440px) {
-  .header {
-    height: 90vh; } }
-
-@media (max-width: 1366px) {
+@media (max-width: 1439px) {
   .header {
     height: 100vh; }
   .cards-block {
     width: 70%; } }
 
-@media (max-width: 1024px) {
+@media (max-width: 1365px) {
   h2 {
     font-size: 21px; }
   .section-number {
@@ -974,19 +975,16 @@ img {
   .header-slogan {
     margin-left: 0; }
   .cards-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 90%; }
   .contacts-wrapper {
     width: 85%; }
   .contacts-item {
     margin-right: 30px; } }
 
-@media (min-width: 768px) {
-  .price-btn {
-    display: none; }
-  .price-item:nth-child(2) .price-btn {
-    display: block; } }
-
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .header {
     height: auto;
     margin-bottom: 90px; }
@@ -1093,7 +1091,7 @@ img {
   .footer-url {
     margin-bottom: 10px; } }
 
-@media (max-width: 425px) {
+@media (max-width: 767px) {
   .section-number {
     display: none; }
   .team-reviews-bg {
@@ -1222,6 +1220,8 @@ img {
     .price-item:nth-child(2) {
       width: 100%;
       height: auto; }
+  .price-btn {
+    display: block; }
   .team {
     margin-bottom: 70px; }
   .team-title {
@@ -1234,6 +1234,8 @@ img {
     width: 85%; }
   .team-list {
     margin: 0; }
+  .team-list-slider {
+    margin-right: 0; }
   .team-item {
     display: none; }
     .team-item:nth-child(1) {

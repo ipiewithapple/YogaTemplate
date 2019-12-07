@@ -17,7 +17,6 @@
 
 .team-list {
   list-style: none;
-  margin-right: 70px;
 }
 
 .team-item {
@@ -37,6 +36,7 @@
 
 .team-list-slider{
   position: relative;
+  margin-right: 70px;
 }
 
 .team-slider-nav{
@@ -112,6 +112,7 @@
 // Coach more
 
 .coach-more{
+  width: 100%;
   display: flex;
   flex-direction: column;
   background: url("../img/team-bg2.png") no-repeat top right;

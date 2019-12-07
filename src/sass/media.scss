@@ -1,6 +1,7 @@
 // min 1920px
 
 @media (min-width: 1920px) {
+
   // Cards
   .cards-block {
     width: 50%;
@@ -24,7 +25,7 @@
 
   // Contacts
 
-  .contacts > div {
+  .contacts>div {
     width: 50%;
   }
 
@@ -35,18 +36,10 @@
   }
 }
 
-// max 1440px
+// max 1439px
 
-@media (max-width: 1440px) {
-  // Header
-  .header {
-    height: 90vh;
-  }
-}
+@media (max-width: 1439px) {
 
-// max 1366px
-
-@media (max-width: 1366px) {
   // Header
   .header {
     height: 100vh;
@@ -58,9 +51,10 @@
   }
 }
 
-// max 1024px
+// max 1365px
 
-@media (max-width: 1024px) {
+@media (max-width: 1365px) {
+
   // Other
   h2 {
     font-size: 21px;
@@ -90,6 +84,7 @@
 
   // Directions
   .cards-block {
+    justify-content: center;
     width: 90%;
   }
 
@@ -103,21 +98,10 @@
   }
 }
 
-// min 768px
+// max 1023px
 
-@media (min-width: 768px) {
-  .price-btn {
-    display: none;
-  }
+@media (max-width: 1023px) {
 
-  .price-item:nth-child(2) .price-btn {
-    display: block;
-  }
-}
-
-// max 768px
-
-@media (max-width: 768px) {
   // Header
   .header {
     height: auto;
@@ -292,9 +276,10 @@
   }
 }
 
-// max 425px
+// max 767px
 
-@media (max-width: 425px) {
+@media (max-width: 767px) {
+
   // Other
   .section-number {
     display: none;
@@ -377,6 +362,7 @@
   .cards-desktop {
     width: 100%;
     margin: 0;
+
     & .card {
       @include card-main;
       flex-direction: column;
@@ -388,13 +374,16 @@
 
       & .card-desc {
         padding: 20px;
+
         & .card-title {
           font-size: 12px;
         }
+
         & .card-timetable,
         .card-trainer {
           font-size: 10px;
         }
+
         & .card-btn {
           width: 40px;
         }
@@ -442,6 +431,10 @@
     }
   }
 
+  .price-btn {
+    display: block;
+  }
+
   // Team
   .team {
     margin-bottom: 70px;
@@ -458,6 +451,10 @@
 
   .team-list {
     margin: 0;
+  }
+
+  .team-list-slider {
+    margin-right: 0;
   }
 
   .team-item {
@@ -543,14 +540,15 @@
     line-height: 100px;
   }
 
-  .reviews-blockquote{
+  .reviews-blockquote {
     margin-top: -30px;
   }
 
   // Contacts
-  .contacts>div{
+  .contacts>div {
     width: 100%;
   }
+
   .contacts-form {
     width: 85%;
   }
